@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#111827">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%91%91%3C/text%3E%3C/svg%3E">
+    <title>Shopee Affiliate Mastery</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    animation: {
+                        'pulse-glow': 'pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        pulseGlow: {
+                            '0%, 100%': { boxShadow: '0 0 15px rgba(251, 191, 36, 0.3)' },
+                            '50%': { boxShadow: '0 0 25px rgba(251, 191, 36, 0.7)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .ic{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;flex-shrink:0}
+        html{scroll-padding-top:6rem;-webkit-text-size-adjust:100%}
+        body{padding-bottom:env(safe-area-inset-bottom,0px)}
+        nav{padding-top:env(safe-area-inset-top,0px)}
+        .overflow-y-auto{-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+        /* Custom scrollbar untuk body dan modal */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #111827; } /* bg-gray-900 */
+        ::-webkit-scrollbar-thumb { background: #374151; border-radius: 4px; } /* bg-gray-700 */
+        ::-webkit-scrollbar-thumb:hover { background: #fbbf24; } /* gold-400 */
+        
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #fbbf24, #f59e0b);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans antialiased overflow-x-hidden selection:bg-gold-500 selection:text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-40 bg-gray-800/90 backdrop-blur-md border-b border-gray-700 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <svg class="ic text-gold-400 text-2xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
+                    <span class="text-white font-bold text-xl tracking-wider">Affiliate<span class="text-gold-400">Mastery</span></span>
+                </div>
+                <div class="flex space-x-4 md:space-x-8 items-center">
+                    <a href="#kurikulum" class="hidden md:inline text-gray-300 hover:text-gold-400 transition-colors">Kurikulum</a>
+                    <a href="#harga" class="bg-gold-500 hover:bg-gold-600 text-gray-900 font-bold text-sm md:text-base py-2 px-4 md:px-6 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(245,158,11,0.4)]">
+                        Daftar Kelas
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-28 pb-16 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold-500/30 bg-gold-500/10 text-gold-400 text-sm font-medium mb-8">
+                    <span class="relative flex h-3 w-3">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-gold-500"></span>
+                    </span>
+                    Kelas Eksklusif
+                </div>
+                
+                <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+                    Landing Page Elegan <br/>
+                    <span class="text-gradient">Khusus Kelas Affiliate</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Pelajari rahasia sukses Affiliate Marketing dari nol hingga menghasilkan puluhan juta rupiah per bulan, <strong>tanpa harus punya produk sendiri</strong>.
+                </p>
+                
+                <div class="flex justify-center">
+                    <a href="#harga" class="bg-gold-500 text-gray-900 font-bold text-lg py-4 px-10 rounded-full animate-pulse-glow transition-transform duration-300 hover:scale-105 hover:bg-gold-400 flex items-center gap-2">
+                        Bergabung Sekarang <svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kurikulum Section (GRID) -->
+    <section id="kurikulum" class="py-24 relative bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-gold-400 text-sm font-bold tracking-widest uppercase mb-2">Materi Kelas</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Kurikulum Shopee Affiliate Mastery</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">Pilih materi di bawah ini untuk melihat detail pembelajaran yang akan Anda dapatkan.</p>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Modul 01 (Dengan Tombol Interaktif Modal) -->
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-gold-500 transition-colors shadow-lg group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-gold-400 font-bold text-3xl opacity-50">01</span>
+                        <h4 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">Shopee Affiliate Fundamental</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6 border-b border-gray-700 pb-4">
+                        Memahami sistem Shopee Affiliate dari dasar, mengenal cara kerja komisi, persyaratan, hingga langkah awal.
+                    </p>
+                    <div class="space-y-3">
+                        <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-2">Baca Materi Gratis:</p>
+                        <!-- Trigger Buttons -->
+                        <button onclick="openModal('modal1')" class="w-full text-left bg-gray-900 border border-gray-700 p-3 rounded-lg flex items-center justify-between hover:border-gold-500 hover:text-gold-400 transition-colors group/btn">
+                            <span class="text-sm font-medium"><svg class="ic text-gray-500 group-hover/btn:text-gold-400 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Materi 01 - Mengenal Shopee</span>
+                            <svg class="ic text-xs opacity-0 group-hover/btn:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                        <button onclick="openModal('modal2')" class="w-full text-left bg-gray-900 border border-gray-700 p-3 rounded-lg flex items-center justify-between hover:border-gold-500 hover:text-gold-400 transition-colors group/btn">
+                            <span class="text-sm font-medium"><svg class="ic text-gray-500 group-hover/btn:text-gold-400 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Materi 02 - Syarat & Daftar</span>
+                            <svg class="ic text-xs opacity-0 group-hover/btn:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                        <button onclick="openModal('modal3')" class="w-full text-left bg-gray-900 border border-gray-700 p-3 rounded-lg flex items-center justify-between hover:border-gold-500 hover:text-gold-400 transition-colors group/btn">
+                            <span class="text-sm font-medium"><svg class="ic text-gray-500 group-hover/btn:text-gold-400 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Materi 03 - Mengenal Dashboard</span>
+                            <svg class="ic text-xs opacity-0 group-hover/btn:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modul 02 -->
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-gold-500 transition-colors shadow-lg group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-gold-400 font-bold text-3xl opacity-50">02</span>
+                        <h4 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">Product Research</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6 border-b border-gray-700 pb-4">
+                        Belajar menemukan produk potensial yang memiliki peluang penjualan tinggi.
+                    </p>
+                    <div class="space-y-3">
+                        <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-2">Baca Materi Gratis:</p>
+                        <!-- Trigger Buttons -->
+                        <button onclick="openModal('modal4')" class="w-full text-left bg-gray-900 border border-gray-700 p-3 rounded-lg flex items-center justify-between hover:border-gold-500 hover:text-gold-400 transition-colors group/btn">
+                            <span class="text-sm font-medium"><svg class="ic text-gray-500 group-hover/btn:text-gold-400 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Materi 01 - Produk Potensial</span>
+                            <svg class="ic text-xs opacity-0 group-hover/btn:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                        <button onclick="openModal('modal5')" class="w-full text-left bg-gray-900 border border-gray-700 p-3 rounded-lg flex items-center justify-between hover:border-gold-500 hover:text-gold-400 transition-colors group/btn">
+                            <span class="text-sm font-medium"><svg class="ic text-gray-500 group-hover/btn:text-gold-400 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Materi 02 - Produk Terlaris</span>
+                            <svg class="ic text-xs opacity-0 group-hover/btn:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                        <button onclick="openModal('modal6')" class="w-full text-left bg-gray-900 border border-gray-700 p-3 rounded-lg flex items-center justify-between hover:border-gold-500 hover:text-gold-400 transition-colors group/btn">
+                            <span class="text-sm font-medium"><svg class="ic text-gray-500 group-hover/btn:text-gold-400 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Materi 03 - Harga & Komisi</span>
+                            <svg class="ic text-xs opacity-0 group-hover/btn:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                        <button onclick="openModal('modal7')" class="w-full text-left bg-gray-900 border border-gray-700 p-3 rounded-lg flex items-center justify-between hover:border-gold-500 hover:text-gold-400 transition-colors group/btn">
+                            <span class="text-sm font-medium"><svg class="ic text-gray-500 group-hover/btn:text-gold-400 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Materi 04 - Mengenali Tren</span>
+                            <svg class="ic text-xs opacity-0 group-hover/btn:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                        <button onclick="openModal('modal8')" class="w-full text-left bg-gray-900 border border-gray-700 p-3 rounded-lg flex items-center justify-between hover:border-gold-500 hover:text-gold-400 transition-colors group/btn">
+                            <span class="text-sm font-medium"><svg class="ic text-gray-500 group-hover/btn:text-gold-400 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Materi 05 - Analisis Kompetitor</span>
+                            <svg class="ic text-xs opacity-0 group-hover/btn:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modul 03 -->
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-gold-500 transition-colors shadow-lg group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-gold-400 font-bold text-3xl opacity-50">03</span>
+                        <h4 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">Copywriting Strategy</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4 border-b border-gray-700 pb-4">
+                        Menguasai teknik membuat kata-kata promosi yang menarik perhatian audiens.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Formula hook 3 detik</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Storytelling affiliate</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Script video promosi</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Soft & hard selling</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Call to Action (CTA)</li>
+                    </ul>
+                </div>
+
+                <!-- Modul 04 -->
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-gold-500 transition-colors shadow-lg group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-gold-400 font-bold text-3xl opacity-50">04</span>
+                        <h4 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">Traffic Generation</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4 border-b border-gray-700 pb-4">
+                        Mempelajari strategi mendatangkan pengunjung organik via medsos.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Algoritma distribusi</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Strategi FYP TikTok</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Riset hashtag & keyword</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Membangun audiens</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Evaluasi performa konten</li>
+                    </ul>
+                </div>
+
+                <!-- Modul 05 -->
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-gold-500 transition-colors shadow-lg group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-gold-400 font-bold text-3xl opacity-50">05</span>
+                        <h4 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">Video Editing</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4 border-b border-gray-700 pb-4">
+                        Belajar memproduksi konten affiliate yang menarik hanya dari HP.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Konsep konten</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Pengambilan gambar</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Editing via CapCut</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Konten tanpa wajah</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Optimasi video 9:16</li>
+                    </ul>
+                </div>
+
+                <!-- Modul 06 -->
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:border-gold-500 transition-colors shadow-lg group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-gold-400 font-bold text-3xl opacity-50">06</span>
+                        <h4 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">AI Automation</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4 border-b border-gray-700 pb-4">
+                        Memanfaatkan AI untuk mempercepat produksi dan ide kreatif.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>ChatGPT untuk affiliate</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Membuat script otomatis</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Caption & hook AI</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Visual produk AI</li>
+                        <li><svg class="ic text-gold-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Workflow efisien</li>
+                    </ul>
+                </div>
+
+                <!-- Bonus Class -->
+                <div class="md:col-span-2 lg:col-span-3 bg-gradient-to-r from-gray-800 to-gray-900 border border-gold-500/50 rounded-2xl p-6 mt-4 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
+                    <div class="flex items-center gap-2 mb-6 justify-center">
+                        <svg class="ic text-gold-400 text-xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></svg>
+                        <h4 class="text-xl md:text-2xl font-bold text-white">Bonus Class Eksklusif</h4>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-900 p-5 rounded-xl border border-gray-700">
+                            <h5 class="text-gold-400 font-bold mb-2">07. Affiliate Live Streaming</h5>
+                            <p class="text-gray-400 text-sm">Belajar mempromosikan produk melalui live streaming dan membangun interaksi dengan calon pembeli secara real-time.</p>
+                        </div>
+                        <div class="bg-gray-900 p-5 rounded-xl border border-gray-700">
+                            <h5 class="text-gold-400 font-bold mb-2">08. Analytics & Optimization</h5>
+                            <p class="text-gray-400 text-sm">Belajar membaca data klik, pesanan, konversi, dan komisi untuk meningkatkan performa strategi affiliate Anda.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="harga" class="py-24 relative bg-gray-900 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Investasi Ilmu Hari Ini</h2>
+                <p class="text-gray-400">Harga spesial dengan akses penuh ke seluruh kurikulum di atas.</p>
+            </div>
+
+            <!-- Pricing Card -->
+            <div class="bg-gray-800 border-2 border-gold-500 rounded-3xl p-8 md:p-10 relative shadow-[0_0_30px_rgba(245,158,11,0.2)] max-w-lg mx-auto">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold-500 text-gray-900 font-bold px-6 py-1 rounded-full text-sm shadow-lg">
+                    PROMO TERBATAS
+                </div>
+                
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-white mb-2">Premium Access</h3>
+                    <p class="text-gray-400 text-sm">Akses seumur hidup ke semua materi</p>
+                    <div class="mt-6">
+                        <span class="text-gray-500 line-through text-xl block mb-1">Rp 1.500.000</span>
+                        <div class="flex items-start justify-center text-white">
+                            <span class="text-xl font-bold mt-2">Rp</span>
+                            <span class="text-5xl md:text-6xl font-extrabold text-gold-400">349</span>
+                            <span class="text-xl font-bold mt-2">.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-center gap-3">
+                        <svg class="ic text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                        <span class="text-gray-300 text-sm">Akses 8 Modul Lengkap</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <svg class="ic text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                        <span class="text-gray-300 text-sm">Grup Support Telegram</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <svg class="ic text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                        <span class="text-gray-300 text-sm">Template Script AI Siap Pakai</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <svg class="ic text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                        <span class="text-gray-300 text-sm">Free Update Materi Kedepannya</span>
+                    </div>
+                </div>
+
+                <button class="w-full bg-gold-500 text-gray-900 font-bold text-lg py-4 rounded-xl shadow-[0_0_15px_rgba(245,158,11,0.4)] hover:bg-gold-400 transition-colors">
+                    DAFTAR SEKARANG
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 border-t border-gray-700 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <svg class="ic text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
+                <span class="text-white font-bold text-lg">Affiliate<span class="text-gold-400">Mastery</span></span>
+            </div>
+            <p class="text-gray-500 text-sm mb-4">Membangun sumber penghasilan dari Affiliate Marketing.</p>
+            <p class="text-gray-600 text-xs">&copy; 2026 Affiliate Mastery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ================= MODALS SECTION ================= -->
+    
+    <!-- MODAL 1: MENGENAL SHOPEE AFFILIATE -->
+    <div id="modal1" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
+        <div class="bg-gray-800 border border-gold-500 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-[0_0_30px_rgba(245,158,11,0.2)] relative">
+            <div class="sticky top-0 bg-gray-800 border-b border-gray-700 p-4 flex justify-between items-center z-10">
+                <h3 class="text-gold-400 font-bold text-lg">MATERI 01</h3>
+                <button onclick="closeModal('modal1')" class="text-gray-400 hover:text-white transition-colors bg-gray-700 hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
+                    <svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div class="p-6 md:p-8 text-gray-300 space-y-6 text-sm md:text-base leading-relaxed">
+                <h2 class="text-2xl font-bold text-white border-b border-gray-700 pb-2">MENGENAL SHOPEE AFFILIATE</h2>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">1. Apa Itu Shopee Affiliate?</h4>
+                    <p class="mb-2">Pernah melihat seseorang mempromosikan produk Shopee melalui TikTok, Instagram, atau media sosial lainnya? Mungkin kamu juga pernah melihat video rekomendasi produk yang menyertakan link pembelian di keranjang kuning. Nah, aktivitas tersebut merupakan salah satu contoh pemasaran melalui program affiliate.</p>
+                    <p class="mb-2">Shopee Affiliate adalah program yang memungkinkan pengguna mendapatkan penghasilan tambahan dengan mempromosikan produk-produk yang tersedia di Shopee melalui media sosial.</p>
+                    <p class="mb-2">Cara kerjanya cukup sederhana. Kamu memilih produk yang ingin dipromosikan, membuat konten menarik, kemudian membagikan link affiliate kepada calon pembeli. Ketika seseorang melakukan pembelian melalui jalur affiliate yang memenuhi ketentuan Shopee, kamu berkesempatan mendapatkan komisi dari transaksi tersebut.</p>
+                    <p>Menariknya, kamu tidak perlu memiliki produk sendiri untuk memulai. Kamu juga tidak perlu menyimpan stok barang, mengemas pesanan, atau mengurus pengiriman. Tugas utamamu adalah mempromosikan produk melalui konten yang menarik dan informatif.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">2. Bagaimana Cara Kerja Shopee Affiliate?</h4>
+                    <p class="mb-2">Untuk memahami program ini, kamu perlu mengetahui alur dasarnya. Ada empat tahapan utama:</p>
+                    <ol class="list-decimal pl-5 space-y-2">
+                        <li><strong>Memilih Produk:</strong> Cari produk yang menarik dan memiliki peluang untuk dipromosikan. Pilih produk yang sesuai dengan kebutuhan calon pembeli dan target audiens media sosialmu.</li>
+                        <li><strong>Membuat Konten Promosi:</strong> Buat konten yang memperkenalkan produk kepada calon pembeli. Kamu bisa membuat video review, rekomendasi produk, tutorial penggunaan, perbandingan produk, atau konten kreatif lainnya.</li>
+                        <li><strong>Membagikan Link Affiliate:</strong> Setelah memilih produk, buat link affiliate melalui fitur yang tersedia di Shopee. Kemudian bagikan link tersebut melalui media sosial yang kamu gunakan.</li>
+                        <li><strong>Mendapatkan Komisi:</strong> Jika terjadi pembelian yang memenuhi ketentuan program affiliate, kamu berkesempatan mendapatkan komisi. Besarnya komisi bergantung pada kategori produk, ketentuan program, dan transaksi yang berhasil divalidasi.</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">3. Apa Keuntungan Menjadi Shopee Affiliate?</h4>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Tidak Perlu Memiliki Produk Sendiri:</strong> Kamu bisa mempromosikan produk dari berbagai penjual tanpa harus membuat atau memproduksi barang sendiri.</li>
+                        <li><strong>Tidak Perlu Menyimpan Stok:</strong> Kamu tidak perlu menyediakan tempat penyimpanan barang karena proses penyediaan dan pengiriman dilakukan oleh penjual.</li>
+                        <li><strong>Bisa Dimulai dengan HP:</strong> Kamu bisa membuat konten, mencari produk, dan membagikan link affiliate hanya menggunakan smartphone.</li>
+                        <li><strong>Bisa Memanfaatkan Media Sosial:</strong> Platform seperti TikTok, Instagram, Facebook, dan YouTube bisa digunakan sebagai media untuk menjangkau calon pembeli.</li>
+                        <li><strong>Berpeluang Mendapatkan Penghasilan Tambahan:</strong> Konten yang kamu buat berpotensi menghasilkan komisi ketika berhasil mendatangkan transaksi.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">4. Siapa yang Bisa Menjadi Shopee Affiliate?</h4>
+                    <p class="mb-2">Program ini cocok untuk berbagai kalangan yang ingin belajar menghasilkan uang melalui pemasaran digital. Contohnya:</p>
+                    <ul class="list-disc pl-5 mb-2">
+                        <li>Pelajar dan mahasiswa.</li>
+                        <li>Karyawan yang ingin memiliki penghasilan tambahan.</li>
+                        <li>Ibu rumah tangga.</li>
+                        <li>Content creator pemula.</li>
+                        <li>Pengguna media sosial yang tertarik dengan dunia affiliate marketing.</li>
+                    </ul>
+                    <p>Kamu tidak harus menjadi content creator profesional untuk memulai. Yang terpenting adalah mau belajar, memahami produk, dan konsisten mengembangkan konten.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">5. Hal yang Perlu Dipahami Sebelum Memulai</h4>
+                    <ul class="list-disc pl-5">
+                        <li>Affiliate bukan sistem yang menjamin penghasilan tetap.</li>
+                        <li>Tidak semua klik link menghasilkan komisi.</li>
+                        <li>Komisi diberikan berdasarkan transaksi yang memenuhi ketentuan program.</li>
+                        <li>Setiap produk bisa memiliki besaran komisi yang berbeda.</li>
+                        <li>Konten yang menarik dapat membantu meningkatkan peluang mendapatkan pembeli.</li>
+                        <li>Konsistensi dan evaluasi merupakan bagian penting dalam mengembangkan akun affiliate.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700/50 p-4 rounded-lg border-l-4 border-gold-500">
+                    <h4 class="font-bold text-white mb-1">KESIMPULAN</h4>
+                    <p>Shopee Affiliate memberikan kesempatan bagi siapa saja yang ingin belajar mendapatkan penghasilan tambahan melalui promosi produk di media sosial. Kamu tidak perlu memiliki produk sendiri atau mengurus pengiriman barang. Cukup pelajari cara memilih produk, membuat konten promosi, dan membagikan link affiliate dengan strategi yang tepat. Namun, perlu diingat bahwa hasil setiap orang bisa berbeda. Jangan hanya berfokus pada komisi. Bangun kemampuan membuat konten dan memahami kebutuhan calon pembeli.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: SYARAT DAN CARA DAFTAR -->
+    <div id="modal2" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
+        <div class="bg-gray-800 border border-gold-500 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-[0_0_30px_rgba(245,158,11,0.2)] relative">
+            <div class="sticky top-0 bg-gray-800 border-b border-gray-700 p-4 flex justify-between items-center z-10">
+                <h3 class="text-gold-400 font-bold text-lg">MATERI 02</h3>
+                <button onclick="closeModal('modal2')" class="text-gray-400 hover:text-white transition-colors bg-gray-700 hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
+                    <svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div class="p-6 md:p-8 text-gray-300 space-y-6 text-sm md:text-base leading-relaxed">
+                <h2 class="text-2xl font-bold text-white border-b border-gray-700 pb-2">SYARAT DAN CARA DAFTAR SHOPEE AFFILIATE</h2>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">1. Apa Saja Syarat untuk Bergabung?</h4>
+                    <p class="mb-2">Sebelum mulai mempromosikan produk, tentunya kamu harus memiliki akun yang terdaftar dalam program Shopee Affiliate. Ada beberapa hal yang perlu dipersiapkan:</p>
+                    <ul class="list-disc pl-5 mb-2 space-y-1">
+                        <li>Memiliki akun Shopee pribadi yang aktif.</li>
+                        <li>Memiliki akun media sosial seperti TikTok, Instagram, Facebook, YouTube, atau X.</li>
+                        <li>Akun media sosial aktif dan dapat diakses secara publik.</li>
+                        <li>Memiliki alamat email yang aktif untuk keperluan verifikasi.</li>
+                    </ul>
+                    <p>Berdasarkan panduan pendaftaran yang kita gunakan, tidak ada persyaratan minimum jumlah followers. Jadi, kamu yang baru mulai membangun akun media sosial tetap bisa mempersiapkan pendaftaran. <br><em class="text-gray-400">Tips: Gunakan akun media sosial yang memang ingin kamu kembangkan untuk membuat konten affiliate.</em></p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">2. Tutorial Cara Daftar Shopee Affiliate</h4>
+                    <p class="mb-4">Setelah semua persiapan selesai, sekarang kita masuk ke proses pendaftaran. Ikuti langkah-langkah berikut:</p>
+                    
+                    <div class="space-y-3">
+                        <div><strong class="text-white">LANGKAH 1 — Buka Aplikasi Shopee:</strong> Buka aplikasi Shopee melalui smartphone kamu. Pastikan sudah login menggunakan akun Shopee pribadi.</div>
+                        <div><strong class="text-white">LANGKAH 2 — Masuk ke Menu Saya:</strong> Pilih menu "Saya" yang berada di bagian pojok kanan bawah aplikasi.</div>
+                        <div><strong class="text-white">LANGKAH 3 — Cari Shopee Affiliate Program:</strong> Gulir halaman ke bawah sampai menemukan menu Shopee Affiliate Program. Jika tidak terlihat, gunakan kolom pencarian dan ketik "Shopee Affiliate Program".</div>
+                        <div><strong class="text-white">LANGKAH 4 — Klik Gabung Sekarang:</strong> Setelah masuk ke halaman, pilih tombol "Gabung Sekarang".</div>
+                        <div><strong class="text-white">LANGKAH 5 — Pilih Jenis Akun:</strong> Jika tersedia pilihan, pilih "Individu" untuk mendaftar sebagai perorangan.</div>
+                        <div><strong class="text-white">LANGKAH 6 — Hubungkan Akun Media Sosial:</strong> Masukkan tautan akun media sosial yang akan digunakan (misal TikTok/Instagram).</div>
+                        <div><strong class="text-white">LANGKAH 7 — Masukkan Alamat Email:</strong> Masukkan alamat email yang aktif dan tekan tombol "Kirim Kode Verifikasi".</div>
+                        <div><strong class="text-white">LANGKAH 8 — Verifikasi Email:</strong> Buka email, cari pesan verifikasi dari Shopee, salin kode OTP, lalu masukkan ke kolom di aplikasi.</div>
+                        <div><strong class="text-white">LANGKAH 9 — Masukkan Kode Tim Affiliate (Opsional):</strong> Jika ada, masukkan kode tim affiliate.</div>
+                        <div><strong class="text-white">LANGKAH 10 — Selesaikan Pendaftaran:</strong> Centang persetujuan syarat dan ketentuan, lalu tekan "Kirim". Tunggu proses persetujuan dari Shopee.</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">3. Apa yang Harus Dilakukan Setelah Mendaftar?</h4>
+                    <p class="mb-2">Setelah menyelesaikan pendaftaran, jangan langsung bingung. Persiapkan hal berikut:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Pelajari dashboard Shopee Affiliate.</li>
+                        <li>Kenali fitur pencarian produk affiliate.</li>
+                        <li>Pelajari cara membuat link affiliate.</li>
+                        <li>Mulai mencari produk yang ingin dipromosikan.</li>
+                        <li>Siapkan akun media sosial untuk membuat konten.</li>
+                    </ul>
+                    <p class="mt-2 text-gold-500 italic">Jangan terburu-buru ingin mendapatkan komisi sebelum memahami sistemnya. Kuasai terlebih dahulu fitur dan cara kerjanya.</p>
+                </div>
+
+                <div class="bg-gray-700/50 p-4 rounded-lg border-l-4 border-gold-500">
+                    <h4 class="font-bold text-white mb-1">KESIMPULAN</h4>
+                    <p>Proses pendaftaran Shopee Affiliate pada dasarnya cukup mudah selama kamu mengikuti petunjuk yang tersedia. Persiapkan akun Shopee, media sosial, dan email aktif. Setelah berhasil mendaftar, langkah berikutnya adalah mempelajari fitur affiliate dan mulai membangun strategi promosi. Selamat! Kamu sudah menyelesaikan tahap awal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: MENGENAL DASHBOARD -->
+    <div id="modal3" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
+        <div class="bg-gray-800 border border-gold-500 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-[0_0_30px_rgba(245,158,11,0.2)] relative">
+            <div class="sticky top-0 bg-gray-800 border-b border-gray-700 p-4 flex justify-between items-center z-10">
+                <h3 class="text-gold-400 font-bold text-lg">MATERI 03</h3>
+                <button onclick="closeModal('modal3')" class="text-gray-400 hover:text-white transition-colors bg-gray-700 hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
+                    <svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div class="p-6 md:p-8 text-gray-300 space-y-6 text-sm md:text-base leading-relaxed">
+                <h2 class="text-2xl font-bold text-white border-b border-gray-700 pb-2">MENGENAL DASHBOARD SHOPEE AFFILIATE</h2>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">1. Apa Itu Dashboard Shopee Affiliate?</h4>
+                    <p>Setelah bergabung, langkah selanjutnya adalah mengenal dashboard. Dashboard merupakan pusat informasi untuk memantau performa promosi, perkembangan pesanan, komisi, serta mencari produk. Memahami fungsinya sangat penting untuk kesuksesan akunmu.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">2. Mengenal Menu dan Fitur Dashboard</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <strong class="text-white">A. Ringkasan Performa:</strong> Menampilkan gambaran aktivitas (Klik, Pesanan, Produk Terjual, Komisi). <br><em class="text-gray-400 text-sm">Tips: Jangan hanya perhatikan klik, tapi juga konversi pesanan.</em>
+                        </div>
+                        <div>
+                            <strong class="text-white">B. Pencarian Produk:</strong> Fitur untuk mencari barang yang ingin dipromosikan berdasarkan kategori (Fashion, Rumah Tangga, Gadget, dll). Pilih yang relevan dengan audiensmu.
+                        </div>
+                        <div>
+                            <strong class="text-white">C. Fitur Link Affiliate:</strong> Digunakan untuk membuat link khusus yang mengarahkan pembeli ke produk, sehingga sistem bisa melacak bahwa pembeli datang dari promosimu.
+                        </div>
+                        <div>
+                            <strong class="text-white">D. Laporan Pesanan:</strong> Membantu memantau transaksi dari promosi. Pesanan yang muncul belum tentu langsung jadi komisi (butuh validasi).
+                        </div>
+                        <div>
+                            <strong class="text-white">E. Laporan Komisi:</strong> Memantau komisi dalam proses atau yang sudah dikonfirmasi. Perhatikan status pembayarannya.
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">3. Cara Membaca Data Performa</h4>
+                    <p class="mb-2">Misalnya, kamu melihat data: Klik (500), Pesanan (20), Produk Terjual (15), Komisi (Rp75.000). Dari sini kamu tahu kontenmu menarik pengunjung. Namun, evaluasi mengapa dari 500 klik hanya 15 yang terjual. Tidak semua klik menjadi pembelian, itulah pentingnya membaca data performa.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">4. Tips Menggunakan Dashboard</h4>
+                    <ul class="list-decimal pl-5 space-y-1">
+                        <li>Periksa performa secara berkala.</li>
+                        <li>Perhatikan produk mana yang mendatangkan banyak penjualan.</li>
+                        <li>Evaluasi jenis konten mana yang paling efektif.</li>
+                        <li>Pahami status komisi (dalam proses vs selesai).</li>
+                        <li>Jangan terpaku pada klik semata, fokus pada kualitas audiens.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">5. Kesalahan Pemula</h4>
+                    <ul class="list-disc pl-5">
+                        <li>Tidak pernah cek laporan performa.</li>
+                        <li>Hanya kejar jumlah klik.</li>
+                        <li>Tidak evaluasi produk.</li>
+                        <li>Menganggap semua pesanan pasti jadi komisi tanpa sadar proses validasi.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700/50 p-4 rounded-lg border-l-4 border-gold-500">
+                    <h4 class="font-bold text-white mb-1">KESIMPULAN</h4>
+                    <p>Dashboard bukan sekadar tempat lihat komisi, tapi kompas strategimu. Dari mencari produk hingga evaluasi konten, semakin kamu paham membaca data dashboard, semakin mudah kamu menentukan langkah strategi yang tepat agar komisi terus meningkat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4: CARA MENCARI PRODUK POTENSIAL -->
+    <div id="modal4" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
+        <div class="bg-gray-800 border border-gold-500 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-[0_0_30px_rgba(245,158,11,0.2)] relative">
+            <div class="sticky top-0 bg-gray-800 border-b border-gray-700 p-4 flex justify-between items-center z-10">
+                <h3 class="text-gold-400 font-bold text-lg">MATERI 01 (MODUL 02)</h3>
+                <button onclick="closeModal('modal4')" class="text-gray-400 hover:text-white transition-colors bg-gray-700 hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
+                    <svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div class="p-6 md:p-8 text-gray-300 space-y-6 text-sm md:text-base leading-relaxed">
+                <h2 class="text-2xl font-bold text-white border-b border-gray-700 pb-2">CARA MENCARI PRODUK POTENSIAL</h2>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">1. Apa Itu Produk Potensial?</h4>
+                    <p class="mb-2">Produk potensial adalah produk yang memiliki peluang untuk menarik perhatian calon pembeli dan menghasilkan penjualan ketika dipromosikan.</p>
+                    <p class="mb-2">Dalam Shopee Affiliate, memilih produk merupakan langkah awal yang perlu diperhatikan sebelum membuat konten. Jangan sampai kamu sudah menghabiskan waktu membuat video, mengedit konten, dan membagikan link, tetapi produk yang dipromosikan ternyata kurang diminati oleh target audiens.</p>
+                    <p class="mb-2">Karena itu, seorang affiliate perlu belajar melakukan riset sebelum menentukan produk.</p>
+                    <p class="text-gray-400 italic">Perlu dipahami bahwa produk potensial bukan berarti produk yang pasti laris. Kita hanya mencari produk yang memiliki indikator peluang lebih baik berdasarkan data dan kebutuhan pasar.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">2. Ciri-Ciri Produk yang Layak Dipromosikan</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <strong class="text-white block">A. Memiliki Permintaan Pasar</strong>
+                            <p class="mb-1">Pilih produk yang memang dibutuhkan atau dicari oleh calon pembeli. Contohnya:</p>
+                            <ul class="list-disc pl-5">
+                                <li>Peralatan rumah tangga yang membantu pekerjaan sehari-hari.</li>
+                                <li>Fashion yang sesuai dengan kebutuhan dan tren.</li>
+                                <li>Aksesori HP yang memiliki fungsi praktis.</li>
+                                <li>Produk kecantikan yang banyak dicari target audiensnya.</li>
+                            </ul>
+                            <p class="text-xs text-gray-400 mt-1">Produk yang memiliki kegunaan jelas biasanya lebih mudah dijelaskan melalui konten.</p>
+                        </div>
+                        <div>
+                            <strong class="text-white block">B. Memiliki Penjualan dan Ulasan yang Meyakinkan</strong>
+                            <p>Perhatikan jumlah produk terjual, rating, dan ulasan pembeli. Informasi tersebut bisa menjadi petunjuk awal untuk menilai respons pasar. Jangan hanya melihat jumlah penjualan. Periksa juga ulasan negatif untuk mengetahui kekurangan produk.</p>
+                        </div>
+                        <div>
+                            <strong class="text-white block">C. Harga Sesuai Target Pembeli</strong>
+                            <p>Pertimbangkan apakah harga produk masuk akal bagi audiens yang ingin kamu jangkau. Produk murah belum tentu lebih mudah terjual, begitu juga sebaliknya. Yang terpenting manfaat produk sebanding dengan harga.</p>
+                        </div>
+                        <div>
+                            <strong class="text-white block">D. Memiliki Komisi yang Menarik</strong>
+                            <p>Perhatikan besaran komisi yang tersedia. Kamu bisa membandingkan beberapa produk sejenis untuk menemukan pilihan yang memberikan keseimbangan antara potensi penjualan dan komisi.</p>
+                        </div>
+                        <div>
+                            <strong class="text-white block">E. Mudah Dibuat Menjadi Konten</strong>
+                            <p class="mb-1">Pilih produk yang memiliki keunggulan atau fungsi yang bisa diperlihatkan. Misalnya:</p>
+                            <ul class="list-disc pl-5">
+                                <li>Produk sebelum dan sesudah digunakan.</li>
+                                <li>Produk dengan beberapa fungsi.</li>
+                                <li>Produk yang memiliki desain menarik.</li>
+                                <li>Produk yang bisa menyelesaikan masalah sehari-hari.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">3. Cara Mencari Produk Potensial di Shopee</h4>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Buka aplikasi Shopee Affiliate.</li>
+                        <li>Masuk ke fitur pencarian produk.</li>
+                        <li>Tentukan kategori yang ingin kamu promosikan.</li>
+                        <li>Cari beberapa produk dengan kata kunci yang relevan.</li>
+                        <li>Bandingkan jumlah penjualan dan rating.</li>
+                        <li>Periksa ulasan serta foto dari pembeli.</li>
+                        <li>Perhatikan harga dan komisi produk.</li>
+                        <li>Simpan beberapa produk yang paling menarik untuk dianalisis.</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">4. Contoh Praktik Riset Produk</h4>
+                    <p class="mb-2">Misalnya kamu ingin membangun akun affiliate dengan niche fashion wanita. Kamu menemukan tiga produk (simulasi):</p>
+                    <div class="overflow-x-auto mb-2">
+                        <table class="w-full text-left text-sm border-collapse border border-gray-700">
+                            <thead class="bg-gray-700">
+                                <tr>
+                                    <th class="border border-gray-600 p-2">Produk</th>
+                                    <th class="border border-gray-600 p-2">Harga</th>
+                                    <th class="border border-gray-600 p-2">Terjual</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-gray-700 p-2">Celana kulot</td>
+                                    <td class="border border-gray-700 p-2">Rp65.000</td>
+                                    <td class="border border-gray-700 p-2">8.000</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-700 p-2">Tas wanita</td>
+                                    <td class="border border-gray-700 p-2">Rp95.000</td>
+                                    <td class="border border-gray-700 p-2">3.500</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-700 p-2">Sandal wanita</td>
+                                    <td class="border border-gray-700 p-2">Rp45.000</td>
+                                    <td class="border border-gray-700 p-2">12.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Apakah sandal otomatis menjadi produk terbaik karena penjualannya paling tinggi? Belum tentu. Kamu masih perlu memeriksa: rating, komisi, kualitas produk, persaingan konten, dan kesesuaian audiens.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">5. Tips untuk Pemula</h4>
+                    <ul class="list-disc pl-5">
+                        <li>Mulai dari satu niche agar riset lebih terarah.</li>
+                        <li>Cari produk yang mudah dipahami dan dijelaskan.</li>
+                        <li>Jangan hanya mengejar komisi besar.</li>
+                        <li>Perhatikan ulasan pembeli sebelum mempromosikan produk.</li>
+                        <li>Simpan daftar produk potensial dan lakukan pengujian konten.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700/50 p-4 rounded-lg border-l-4 border-gold-500">
+                    <h4 class="font-bold text-white mb-1">KESIMPULAN</h4>
+                    <p>Memilih produk bukan sekadar mencari barang yang sedang ramai dijual. Kamu perlu memahami kebutuhan pasar, kualitas produk, harga, komisi, dan peluang untuk membuat konten. Semakin baik proses riset yang kamu lakukan, semakin terarah strategi affiliate yang akan kamu jalankan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 5: RISET PRODUK TERLARIS -->
+    <div id="modal5" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
+        <div class="bg-gray-800 border border-gold-500 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-[0_0_30px_rgba(245,158,11,0.2)] relative">
+            <div class="sticky top-0 bg-gray-800 border-b border-gray-700 p-4 flex justify-between items-center z-10">
+                <h3 class="text-gold-400 font-bold text-lg">MATERI 02 (MODUL 02)</h3>
+                <button onclick="closeModal('modal5')" class="text-gray-400 hover:text-white transition-colors bg-gray-700 hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
+                    <svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div class="p-6 md:p-8 text-gray-300 space-y-6 text-sm md:text-base leading-relaxed">
+                <h2 class="text-2xl font-bold text-white border-b border-gray-700 pb-2">RISET PRODUK TERLARIS</h2>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">1. Apa Itu Riset Produk Terlaris?</h4>
+                    <p>Riset produk terlaris adalah proses mencari dan menganalisis produk yang memiliki catatan penjualan tinggi dalam periode tertentu. Tujuannya adalah mengetahui produk apa yang sedang mendapatkan respons positif dari pembeli. Namun, perlu diingat bahwa produk dengan penjualan tinggi belum tentu cocok untuk semua akun affiliate. Kamu tetap perlu menyesuaikannya dengan niche dan target audiens.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">2. Mengapa Produk Terlaris Perlu Diriset?</h4>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li><strong>Mengetahui produk yang diminati pasar:</strong> Penjualan tinggi memberikan gambaran adanya permintaan.</li>
+                        <li><strong>Menemukan ide konten:</strong> Kamu bisa mempelajari produk dan mencari sudut pandang konten yang berbeda.</li>
+                        <li><strong>Mengurangi pemilihan produk asal:</strong> Kamu memiliki dasar kuat karena melihat data.</li>
+                        <li><strong>Menemukan peluang:</strong> Membandingkan antar kategori untuk menemukan niche yang sesuai.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">3. Cara Melakukan Riset Produk Terlaris</h4>
+                    <ol class="list-decimal pl-5 space-y-1 mb-2">
+                        <li>Buka Shopee atau dashboard Shopee Affiliate.</li>
+                        <li>Pilih kategori produk yang ingin kamu teliti.</li>
+                        <li>Cari produk berdasarkan kata kunci.</li>
+                        <li>Perhatikan daftar produk terlaris jika fitur tersebut tersedia.</li>
+                        <li>Bandingkan jumlah penjualan produk.</li>
+                        <li>Periksa rating dan ulasan pembeli.</li>
+                        <li>Perhatikan harga serta komisi.</li>
+                        <li>Catat produk yang memenuhi kriteria untuk dianalisis lebih lanjut.</li>
+                    </ol>
+                    <p class="text-gray-400 italic text-sm">Jika dashboard affiliate menyediakan fitur Performa Produk, kamu juga dapat memanfaatkannya untuk melihat produk yang memiliki performa terbaik.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">4. Jangan Hanya Melihat Jumlah Terjual</h4>
+                    <p class="mb-2">Ini merupakan hal yang sering dilewatkan oleh pemula. Misalnya (angka simulasi):</p>
+                    <div class="overflow-x-auto mb-2">
+                        <table class="w-full text-left text-sm border-collapse border border-gray-700">
+                            <thead class="bg-gray-700">
+                                <tr>
+                                    <th class="border border-gray-600 p-2">Indikator</th>
+                                    <th class="border border-gray-600 p-2">Produk A</th>
+                                    <th class="border border-gray-600 p-2">Produk B</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="border border-gray-700 p-2">Terjual</td><td class="border border-gray-700 p-2">10.000</td><td class="border border-gray-700 p-2">3.000</td></tr>
+                                <tr><td class="border border-gray-700 p-2">Rating</td><td class="border border-gray-700 p-2">4,7</td><td class="border border-gray-700 p-2">4,9</td></tr>
+                                <tr><td class="border border-gray-700 p-2">Harga</td><td class="border border-gray-700 p-2">Rp30.000</td><td class="border border-gray-700 p-2">Rp75.000</td></tr>
+                                <tr><td class="border border-gray-700 p-2">Komisi</td><td class="border border-gray-700 p-2">3%</td><td class="border border-gray-700 p-2">8%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Produk A terjual lebih banyak, tapi Produk B punya rating dan komisi lebih tinggi. Pilih yang mana? Tergantung target pembeli dan kualitasnya. Jangan terburu-buru.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">5. Periksa Ulasan Pembeli</h4>
+                    <p class="mb-1">Baca ulasan produk dan perhatikan hal berikut:</p>
+                    <ul class="list-disc pl-5">
+                        <li>Apakah kualitas barang sesuai dengan deskripsi?</li>
+                        <li>Apa kekurangan yang sering disebutkan?</li>
+                        <li>Apakah ada foto atau video dari pembeli?</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">6. Buat Daftar Produk Terlaris</h4>
+                    <p>Jangan hanya melakukan riset lalu melupakannya. Buat daftar (kandidat / uji konten) untuk menyimpan hasil riset agar kamu bisa membandingkan dan menentukan mana yang akan dipromosikan.</p>
+                </div>
+
+                <div class="bg-gray-700/50 p-4 rounded-lg border-l-4 border-gold-500">
+                    <h4 class="font-bold text-white mb-1">KESIMPULAN</h4>
+                    <p>Produk terlaris bisa menjadi sumber ide dan referensi untuk menemukan produk potensial. Namun, jangan menjadikan jumlah penjualan sebagai satu-satunya patokan. Gabungkan data penjualan, rating, ulasan, harga, komisi, dan kesesuaian produk.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 6: ANALISIS HARGA DAN KOMISI -->
+    <div id="modal6" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
+        <div class="bg-gray-800 border border-gold-500 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-[0_0_30px_rgba(245,158,11,0.2)] relative">
+            <div class="sticky top-0 bg-gray-800 border-b border-gray-700 p-4 flex justify-between items-center z-10">
+                <h3 class="text-gold-400 font-bold text-lg">MATERI 03 (MODUL 02)</h3>
+                <button onclick="closeModal('modal6')" class="text-gray-400 hover:text-white transition-colors bg-gray-700 hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
+                    <svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div class="p-6 md:p-8 text-gray-300 space-y-6 text-sm md:text-base leading-relaxed">
+                <h2 class="text-2xl font-bold text-white border-b border-gray-700 pb-2">ANALISIS HARGA DAN KOMISI</h2>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">1. Mengapa Harga dan Komisi Perlu Dianalisis?</h4>
+                    <p>Jangan sampai memilih produk hanya karena komisinya besar, tetapi harga produk terlalu tinggi untuk target audiensmu. Sebaliknya, produk dengan harga murah juga belum tentu memberikan hasil yang lebih baik. Kuncinya adalah menemukan keseimbangan antara daya tarik produk dan potensi komisi.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">2. Memahami Harga Produk</h4>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Harga Dibandingkan Kompetitor:</strong> Cari penjual lain yang menawarkan produk serupa. Bandingkan kualitas dan harganya.</li>
+                        <li><strong>Kesesuaian Harga dengan Manfaat:</strong> Produk yang memiliki nilai/fungsi yang jelas lebih mudah dijual daripada yang sekadar murah.</li>
+                        <li><strong>Target Pasar:</strong> Sesuaikan dengan anggaran target penonton kontenmu (misal: pelajar vs pekerja).</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">3. Memahami Sistem Komisi Affiliate</h4>
+                    <p>Besaran komisi dapat berbeda-beda berdasarkan kategori produk, ketentuan komisi yang berlaku, program Komisi XTRA, dan status validasi. Selalu periksa rincian persentase komisi sebelum share link.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">4. Cara Menghitung Komisi</h4>
+                    <div class="bg-gray-900 p-3 rounded border border-gray-700 font-mono text-sm mb-2 text-gold-400">
+                        Rumus: Komisi = Harga produk × Persentase komisi
+                    </div>
+                    <p>Contoh: Harga Rp100.000 dengan komisi 5% = Rp5.000 per transaksi valid. Jika 20 transaksi = Rp100.000. (Ini hanya simulasi, aktualnya mengikuti batas maksimal Shopee).</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">5. Membandingkan Berdasarkan Komisi</h4>
+                    <p>Produk A (Harga Rp50.000, Komisi 5% = Rp2.500). Produk B (Harga Rp120.000, Komisi 8% = Rp9.600). Walau B lebih besar, kamu harus pertimbangkan: Seberapa mudah Produk B terjual? Seberapa tinggi permintaannya dibanding A?</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">6. Memahami Komisi XTRA</h4>
+                    <p>Komisi tambahan dari penjual tertentu yang berpartisipasi. Cek di menu Komisi XTRA untuk mendapatkan peluang pendapatan yang lebih tinggi per barangnya.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">7. Kesalahan yang Dihindari</h4>
+                    <ul class="list-disc pl-5">
+                        <li>Hanya melihat persentase komisi tanpa cek harga total.</li>
+                        <li>Menganggap estimasi sebagai saldo pasti (ingat proses validasi).</li>
+                        <li>Tidak membandingkan dengan produk serupa.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700/50 p-4 rounded-lg border-l-4 border-gold-500">
+                    <h4 class="font-bold text-white mb-1">KESIMPULAN</h4>
+                    <p>Analisis harga dan komisi membantu kamu menentukan produk yang memiliki keseimbangan antara potensi penjualan dan pendapatan. Pilih produk yang memiliki harga masuk akal, manfaat jelas, dan sesuai dengan kebutuhan audiens.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 7: MENGENALI PRODUK TREN -->
+    <div id="modal7" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
+        <div class="bg-gray-800 border border-gold-500 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-[0_0_30px_rgba(245,158,11,0.2)] relative">
+            <div class="sticky top-0 bg-gray-800 border-b border-gray-700 p-4 flex justify-between items-center z-10">
+                <h3 class="text-gold-400 font-bold text-lg">MATERI 04 (MODUL 02)</h3>
+                <button onclick="closeModal('modal7')" class="text-gray-400 hover:text-white transition-colors bg-gray-700 hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
+                    <svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div class="p-6 md:p-8 text-gray-300 space-y-6 text-sm md:text-base leading-relaxed">
+                <h2 class="text-2xl font-bold text-white border-b border-gray-700 pb-2">MENGENALI PRODUK TREN</h2>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">1. Apa Itu Produk Tren?</h4>
+                    <p>Produk tren adalah produk yang sedang mengalami peningkatan perhatian atau minat dari calon pembeli. Biasanya viral di media sosial. Contohnya: fashion populer, alat rumah tangga viral, atau produk unik. Tapi ingat, produk viral belum tentu pasti closing, tetap butuh riset!</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">2. Mengapa Harus Mengikuti Tren?</h4>
+                    <ul class="list-disc pl-5">
+                        <li>Menemukan peluang ide konten yang segar.</li>
+                        <li>Memahami minat audiens saat ini.</li>
+                        <li>Menemukan produk lebih awal sebelum kompetitor menyadari.</li>
+                        <li>Mendapat boost algoritma jika konten sangat relevan dengan tren yang sedang naik.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">3. Cara Menemukan Produk Tren</h4>
+                    <div class="space-y-3">
+                        <div>
+                            <strong class="text-white block">A. TikTok Creative Center</strong>
+                            <p class="text-sm">Buka bagian Trends, pilih kategori, dan perhatikan hashtag atau video yang sedang naik daun di periode tersebut.</p>
+                        </div>
+                        <div>
+                            <strong class="text-white block">B. Google Trends</strong>
+                            <p class="text-sm">Masukkan kata kunci, lihat grafik minat pencarian di Indonesia. Bandingkan 2 kata kunci produk untuk melihat mana yang lebih dicari.</p>
+                        </div>
+                        <div>
+                            <strong class="text-white block">C. Media Sosial (Organik)</strong>
+                            <p class="text-sm">Amati video yang sering lewat di FYP kamu, baca kolom komentarnya, dan perhatikan rekomendasi banyak kreator secara natural.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">4. Evaluasi Produk Tren</h4>
+                    <p class="mb-1">Setelah menemukan tren, jangan langsung post. Tanyakan ini:</p>
+                    <ul class="list-disc pl-5">
+                        <li>Apakah ada komisi affiliatenya di Shopee?</li>
+                        <li>Apakah kualitas produknya bagus (bukan abal-abal viral)?</li>
+                        <li>Apakah sesuai dengan niche (tema) akun kamu?</li>
+                        <li>Masih bisakah kamu membuat angle konten yang beda dari kreator lain?</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">5. Jangan Terjebak Tren Sesaat</h4>
+                    <p>Kesalahan pemula: terlalu sering ganti kategori produk (hari ini skincare, besok alat motor) cuma karena kejar FYP. Akunmu jadi tidak punya identitas / niche yang jelas di mata algoritma dan followers.</p>
+                </div>
+
+                <div class="bg-gray-700/50 p-4 rounded-lg border-l-4 border-gold-500">
+                    <h4 class="font-bold text-white mb-1">KESIMPULAN</h4>
+                    <p>Mengikuti tren dapat membantu kamu menemukan peluang produk dan ide konten baru. Namun, jangan hanya mengikuti sesuatu karena sedang viral. Pilih tren yang relevan dengan audiens dan memiliki potensi dikonversi jadi penjualan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 8: ANALISIS KOMPETITOR -->
+    <div id="modal8" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
+        <div class="bg-gray-800 border border-gold-500 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-[0_0_30px_rgba(245,158,11,0.2)] relative">
+            <div class="sticky top-0 bg-gray-800 border-b border-gray-700 p-4 flex justify-between items-center z-10">
+                <h3 class="text-gold-400 font-bold text-lg">MATERI 05 (MODUL 02)</h3>
+                <button onclick="closeModal('modal8')" class="text-gray-400 hover:text-white transition-colors bg-gray-700 hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
+                    <svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div class="p-6 md:p-8 text-gray-300 space-y-6 text-sm md:text-base leading-relaxed">
+                <h2 class="text-2xl font-bold text-white border-b border-gray-700 pb-2">ANALISIS KOMPETITOR</h2>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">1. Apa Itu Analisis Kompetitor?</h4>
+                    <p>Mempelajari strategi kreator lain bukan untuk menyalin (copy-paste), tapi memahami apa yang membuat konten mereka menarik. Kompetitor adalah sumber pembelajaran gratis terbaik di lapangan.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">2. Mengapa Penting?</h4>
+                    <ul class="list-disc pl-5">
+                        <li>Menemukan ide konsep baru.</li>
+                        <li>Memahami hook (tarikan awal video) yang bekerja baik.</li>
+                        <li>Melihat celah kekurangan konten mereka (misal: mereka tidak menjelaskan ukuran produk, nah kamu buat konten yang membahas ukurannya).</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">3. Cara Mencari Kompetitor</h4>
+                    <p>Cari kata kunci niche kamu di TikTok/IG (misal "rekomendasi kulot wanita"). Temukan akun-akun yang rutin upload dan videonya direspons baik. Tidak harus akun jutaan followers, akun kecil yang view-nya stabil juga sangat layak dipelajari.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">4. Apa Saja yang Dianalisis?</h4>
+                    <div class="space-y-2">
+                        <p><strong>A. Hook:</strong> Bagaimana 3 detik pertama mereka memancing penonton?</p>
+                        <p><strong>B. Konsep:</strong> Apakah review, unboxing, atau storytelling?</p>
+                        <p><strong>C. Visual:</strong> Bagaimana cara mereka syuting? Close up, pencahayaan terang, text overlay?</p>
+                        <p><strong>D. Call to Action:</strong> Bagaimana mereka mengarahkan orang klik link keranjang kuning?</p>
+                        <p><strong>E. Komentar:</strong> Baca kolom komentar mereka! Apa keluhan penonton? Jadikan itu sebagai amunisi kontenmu selanjutnya.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">5. Praktik dan Mapping</h4>
+                    <p>Misal Kreator A pakai review produk, Kreator B pakai gaya OOTD. Kamu bisa gabungkan: Bikin OOTD sambil me-review material bahannya. Itulah namanya ATM (Amati, Tiru, Modifikasi).</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gold-400 mb-2">6. Kesalahan yang Dihindari</h4>
+                    <ul class="list-disc pl-5">
+                        <li>Menyalin persis skrip atau video mereka (plagiat).</li>
+                        <li>Hanya fokus pada views tinggi tanpa baca komentarnya.</li>
+                        <li>Reupload video orang lain tanpa izin!</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700/50 p-4 rounded-lg border-l-4 border-gold-500">
+                    <h4 class="font-bold text-white mb-1">KESIMPULAN</h4>
+                    <p>Analisis kompetitor membantu kamu memahami strategi promosi yang terbukti sukses di pasar. Pelajari hook, konsep, caption, dan respons audiens. Jadilah kreator yang mampu belajar dari kompetitor untuk mengembangkan gayamu sendiri secara unik.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vanilla JS for Modals -->
+    <script>
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+            // Mencegah scroll pada body saat modal terbuka
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('hidden');
+            // Mengembalikan scroll pada body
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal jika user mengklik area luar modal (overlay)
+        document.addEventListener('keydown',function(e){if(e.key==='Escape'){for(let i=1;i<=8;i++)closeModal('modal'+i);}});
+        window.onclick = function(event) {
+            const modals = ['modal1', 'modal2', 'modal3', 'modal4', 'modal5', 'modal6', 'modal7', 'modal8'];
+            modals.forEach(id => {
+                const modal = document.getElementById(id);
+                if (event.target == modal) {
+                    closeModal(id);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
